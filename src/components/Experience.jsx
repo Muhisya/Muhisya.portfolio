@@ -4,7 +4,7 @@ export default function Experience() {
       id="experience"
       name="experience"
       className="min-h-screen text-white flex flex-col items-center justify-center 
-                 px-4 sm:px-8 md:px-16 lg:px-24 py-16 sm:py-20 
+                 px-4 sm:px-8 md:px-16 lg:px-24 py-12 sm:py-20 
                  bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900"
     >
       {/* Section Title */}
@@ -16,16 +16,15 @@ export default function Experience() {
       </div>
 
       {/* Skill Cards Container */}
-      <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 w-full">
-        
+      <div className="flex flex-col md:flex-row justify-center items-center gap-8 w-full max-w-5xl">
         {/* Frontend Development */}
         <div className="bg-[#00D1FF] text-[#00242C] rounded-2xl shadow-lg 
-                        p-10 w-full md:w-[540px] lg:w-[530px]  
+                        p-6 sm:p-8 md:p-10 w-full sm:w-[90%] md:w-[500px]  
                         flex flex-col justify-between transition-transform hover:scale-[1.01]">
-          <h3 className="text-xl sm:text-2xl font-semibold mb-9 text-center">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-6 text-center">
             - Frontend Development -
           </h3>
-          <div className="grid grid-cols-2 gap-5 text-sm sm:text-base">
+          <div className="grid grid-cols-2 gap-4 text-sm sm:text-base">
             <div>
               <p className="font-bold uppercase">HTML</p>
               <p>Experienced</p>
@@ -55,22 +54,22 @@ export default function Experience() {
 
         {/* Backend Development */}
         <div className="bg-[#00D1FF] text-[#00242C] rounded-2xl shadow-lg 
-                        p-10 w-full md:w-[540px] lg:w-[530px] 
+                        p-6 sm:p-8 md:p-10 w-full sm:w-[90%] md:w-[500px]
                         flex flex-col justify-between transition-transform hover:scale-[1.01]">
-          <h3 className="text-xl sm:text-2xl font-semibold mb-9 text-center">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-6 text-center">
             - Backend Development & Design -
           </h3>
-          <div className="grid grid-cols-2 gap-5 text-sm sm:text-base">
+          <div className="grid grid-cols-2 gap-4 text-sm sm:text-base">
             <div>
               <p className="font-bold uppercase">Node.js</p>
               <p>Intermediate</p>
             </div>
             <div>
-              <p className="font-bold uppercase">mysql</p>
+              <p className="font-bold uppercase">MySQL</p>
               <p>Basic</p>
             </div>
             <div>
-              <p className="font-bold uppercase">sketch</p>
+              <p className="font-bold uppercase">Sketch</p>
               <p>Elementary</p>
             </div>
             <div>

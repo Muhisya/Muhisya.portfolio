@@ -15,7 +15,7 @@ export default function Portfolio() {
       id="portfolio"
       name="portfolio"
       className="min-h-screen flex flex-col items-center justify-center text-white 
-                 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 px-6 py-16"
+                 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 px-6 py-16 lg:mx-12"
     >
       {/* Section Title */}
       <div className="text-center mb-12">
