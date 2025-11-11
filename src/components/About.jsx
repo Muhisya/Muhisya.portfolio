@@ -60,31 +60,7 @@ export default function About() {
                 7+ Completed
               </p>
             </div>
-
-            {/* Card 3 */}
-            <div className="bg-[#00D1FF] flex flex-col items-center justify-center md:hidden
-                            rounded-xl p-6 w-40 sm:w-48 md:w-52 hover:scale-105 transition duration-300">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="mb-3 w-10 h-10 shrink-0"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#00242C"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" />
-                <circle cx="12" cy="7" r="4" />
-                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-              </svg>
-              <h3 className="text-[#00242C] font-semibold mb-1">Teamwork</h3>
-              <p className="text-sm text-[#00242C] text-center">
-                Collaborative<br />Projects
-              </p>
-            </div>
           </div>
-
           {/* About Text */}
           <p className="text-gray-300 text-md max-w-xl mb-10">
             I’m a senior high school student learning and growing as a programmer. I enjoy working on both frontend and backend development using HTML, CSS, JavaScript, Tailwind, and React. I’m passionate about improving my skills and building projects that bring ideas to life.

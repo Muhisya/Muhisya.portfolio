@@ -1,9 +1,10 @@
 import React from "react";
+import { FaGithub, FaLink } from "react-icons/fa";
 
 const projects = [
   { id: 1, title: "Kopi Tepi", github: "#", website: "#" },
   { id: 2, title: "Hostion", github: "#", website: "#" },
-  { id: 3, title: "Portfolio Website", github: "#", website: "#" },
+  { id: 3, title: "ClickMe", github: "https://github.com/Muhisya/ClickMe", website: "#" },
   { id: 4, title: "Portfolio Website", github: "#", website: "#" },
   { id: 5, title: "Portfolio Website", github: "#", website: "#" },
   { id: 6, title: "Portfolio Website", github: "#", website: "#" },
@@ -48,14 +49,14 @@ export default function Portfolio() {
                 className="px-4 py-2 border border-[#00242C] text-[#00242C] rounded-lg 
                            font-medium hover:bg-[#00242C] hover:text-[#00D1FF] transition"
               >
-                Github
+                <FaGithub className="inline" />
               </a>
               <a
                 href={project.website}
                 className="px-4 py-2 border border-[#00242C] text-[#00242C] rounded-lg 
                            font-medium hover:bg-[#00242C] hover:text-[#00D1FF] transition"
               >
-                Website
+                <FaLink className="inline" />
               </a>
             </div>
           </div>
