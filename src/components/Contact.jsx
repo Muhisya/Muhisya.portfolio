@@ -41,7 +41,7 @@ export default function Contact() {
           </p>
           <a
             href="https://abudzarplus.ponpes.id/"
-            className="text-[#00242C] text-sm font-medium border border-[#00242C] px-4 py-2 rounded-2xl hover:text-gray-800"
+            className="text-[#00242C] text-sm font-medium border border-[#00242C] px-4 py-2 rounded-2xl transition duration-300 hover:text-gray-800 hover:bg-[#00D1FF]/20"
           >
             Click Me To Check It Out
           </a>

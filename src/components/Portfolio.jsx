@@ -2,12 +2,54 @@ import React from "react";
 import { FaGithub, FaLink } from "react-icons/fa";
 
 const projects = [
-  { id: 1, title: "Kopi Tepi", github: "#", website: "#" },
-  { id: 2, title: "Hostion", github: "#", website: "#" },
-  { id: 3, title: "ClickMe", github: "https://github.com/Muhisya/ClickMe", website: "#" },
-  { id: 4, title: "Portfolio Website", github: "#", website: "#" },
-  { id: 5, title: "Portfolio Website", github: "#", website: "#" },
-  { id: 6, title: "Portfolio Website", github: "#", website: "#" },
+  {
+    id: 1,
+    title: "Kopi Tepi",
+    description: "A cozy coffee shop website built with modern design and smooth UI.",
+    github: "#",
+    website: "https://kopitepi.vercel.app/",
+    gradient: "from-amber-400 to-yellow-500",
+  },
+  {
+    id: 2,
+    title: "Hostion",
+    description: "A web hosting landing page built with responsive Tailwind layout.",
+    github: "https://github.com/Muhisya/Hostion",
+    website: "https://muhisya.github.io/Hostion/",
+    gradient: "from-sky-400 to-blue-500",
+  },
+  {
+    id: 3,
+    title: "ClickMe",
+    description: "A fun interactive click-based game made with JavaScript and React.",
+    github: "https://github.com/Muhisya/ClickMe",
+    website: "https://muhisya.github.io/ClickMe/",
+    gradient: "from-purple-400 to-violet-500",
+  },
+  {
+    id: 4,
+    title: "Slicing Design",
+    description: "Frontend slicing project from Figma to responsive web page.",
+    github: "https://github.com/Muhisya/web-slice-red",
+    website: "https://muhisya.github.io/web-slice-red/",
+    gradient: "from-pink-400 to-rose-500",
+  },
+  {
+    id: 5,
+    title: "Portfolio Website",
+    description: "My personal portfolio built with React and Tailwind CSS.",
+    github: "#",
+    website: "#",
+    gradient: "from-emerald-400 to-green-500",
+  },
+  {
+    id: 6,
+    title: "Another Project",
+    description: "A new project is currently in development. Coming soon!",
+    github: "#",
+    website: "#",
+    gradient: "from-indigo-400 to-blue-600",
+  },
 ];
 
 export default function Portfolio() {
@@ -34,36 +76,61 @@ export default function Portfolio() {
           <div
             key={project.id}
             className="bg-[#00D1FF] text-[#00242C] rounded-2xl shadow-lg p-6 
-                       w-full sm:w-[75%] md:w-[85%] lg:w-[95%] flex flex-col justify-between"
+                       w-full sm:w-[75%] md:w-[85%] lg:w-[95%] flex flex-col justify-between 
+                       transition-transform hover:scale-[1.01]"
           >
-            {/* Image Placeholder */}
-            <div className="w-full h-56 bg-[#00242C] rounded-xl mb-4"></div>
+            {/* Title Box */}
+            <div
+              className="w-full h-56 rounded-xl mb-4 flex items-center justify-center relative overflow-hidden 
+                         transition-all duration-500 group"
+            >
+              {/* Gradient background only on hover */}
+              <div
+                className={`absolute inset-0 bg-[#00242C] transition-all duration-500 
+                            group-hover:bg-gradient-to-r ${project.gradient}`}
+              ></div>
 
-            {/* Title */}
-            <h3 className="text-lg font-semibold mb-3">{project.title}</h3>
+              <h3
+                className="text-white text-2xl font-bold absolute inset-0 flex items-center justify-center 
+                           opacity-100 group-hover:opacity-0 transition-opacity duration-300 z-10"
+              >
+                {project.title}
+              </h3>
+
+              <p
+                className="text-white text-center text-sm px-4 absolute inset-0 flex items-center justify-center 
+                           opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+              >
+                {project.description}
+              </p>
+            </div>
 
             {/* Buttons */}
-            <div className="flex gap-4">
+            <div className="flex justify-start gap-4">
               <a
                 href={project.github}
-                className="px-4 py-2 border border-[#00242C] text-[#00242C] rounded-lg 
-                           font-medium hover:bg-[#00242C] hover:text-[#00D1FF] transition"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 border border-[#00242C] text-[#00242C] rounded-lg outline-none 
+                           font-medium transition-all duration-300 hover:bg-[#00242C] hover:text-[#00D1FF] hover:scale-105"
               >
-                <FaGithub className="inline" />
+                <FaGithub className="inline text-xl" />
               </a>
               <a
                 href={project.website}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-4 py-2 border border-[#00242C] text-[#00242C] rounded-lg 
-                           font-medium hover:bg-[#00242C] hover:text-[#00D1FF] transition"
+                           font-medium transition-all duration-300 hover:bg-[#00242C] hover:text-[#00D1FF] hover:scale-105"
               >
-                <FaLink className="inline" />
+                <FaLink className="inline text-xl" />
               </a>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Show only 3 cards on mobile */}
+      {/* Hide extras on mobile */}
       <style>
         {`
           @media (max-width: 640px) {
