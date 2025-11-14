@@ -36,10 +36,10 @@ const projects = [
   },
   {
     id: 5,
-    title: "Portfolio Website",
-    description: "My personal portfolio built with React and Tailwind CSS.",
-    github: "#",
-    website: "#",
+    title: "Eid Mubarok",
+    description: "A simple Eid greeting page featuring festive UI, smooth animations, and a clean celebratory layout.",
+    github: "https://github.com/Muhisya/eid-webslice",
+    website: "https://muhisya.github.io/eid-webslice/",
     gradient: "from-emerald-400 to-green-500",
   },
   {
