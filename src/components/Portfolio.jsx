@@ -44,10 +44,10 @@ const projects = [
   },
   {
     id: 6,
-    title: "Another Project",
-    description: "A new project is currently in development. Coming soon!",
-    github: "#",
-    website: "#",
+    title: "Pokédex",
+    description: "Browse, search, and discover Pokémon in a sleek, interactive Pokédex.",
+    github: "https://github.com/HoshiExperience/Pokemon-Deck",
+    website: "Pokédex",
     gradient: "from-indigo-400 to-blue-600",
   },
 ];
