@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaGithub, FaLink } from "react-icons/fa";
 
 const projects = [
@@ -9,6 +9,7 @@ const projects = [
     github: "#",
     website: "https://kopitepi.vercel.app/",
     gradient: "from-amber-400 to-yellow-500",
+    image: "/projects/kopitepi.png",
   },
   {
     id: 2,
@@ -17,6 +18,7 @@ const projects = [
     github: "https://github.com/Muhisya/Hostion",
     website: "https://muhisya.github.io/Hostion/",
     gradient: "from-sky-400 to-blue-500",
+    image: "/projects/hostion.png",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const projects = [
     github: "https://github.com/Muhisya/ClickMe",
     website: "https://muhisya.github.io/ClickMe/",
     gradient: "from-purple-400 to-violet-500",
+    image: "/projects/clickme.png",
   },
   {
     id: 4,
@@ -33,6 +36,7 @@ const projects = [
     github: "https://github.com/Muhisya/web-slice-red",
     website: "https://muhisya.github.io/web-slice-red/",
     gradient: "from-pink-400 to-rose-500",
+    image: "/projects/slicing.png",
   },
   {
     id: 5,
@@ -41,6 +45,7 @@ const projects = [
     github: "https://github.com/Muhisya/eid-webslice",
     website: "https://muhisya.github.io/eid-webslice/",
     gradient: "from-emerald-400 to-green-500",
+    image: "/projects/eid.png",
   },
   {
     id: 6,
@@ -49,10 +54,13 @@ const projects = [
     github: "https://github.com/HoshiExperience/Pokemon-Deck",
     website: "https://hoshiexperience.github.io/Pokemon-Deck/",
     gradient: "from-indigo-400 to-blue-600",
+    image: "/projects/pokedex.png",
   },
 ];
 
 export default function Portfolio() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   return (
     <section
       id="portfolio"
@@ -80,9 +88,10 @@ export default function Portfolio() {
                        flex flex-col gap-4 transition-transform 
                        hover:scale-[1.01]"
           >
-            {/* Hover Card Header */}
+            {/* Hover Card Header (CLICK TO OPEN POPUP) */}
             <div
-              className="relative w-full h-56 rounded-xl overflow-hidden group"
+              onClick={() => setSelectedImage(project.image)}
+              className="relative w-full h-56 rounded-xl overflow-hidden group cursor-pointer"
             >
               {/* Background → transitions to gradient on hover */}
               <div
@@ -136,6 +145,21 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
+
+      {/* Image Popup Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center 
+                     z-[999] p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <img
+            src={selectedImage}
+            alt="Project Preview"
+            className="max-w-[90%] max-h-[80%] rounded-xl shadow-xl border-4 border-white"
+          />
+        </div>
+      )}
 
       {/* Hide extra cards on mobile */}
       <style>
