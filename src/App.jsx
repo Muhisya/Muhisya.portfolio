@@ -4,6 +4,7 @@ import Navbar from "./components/Navi";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Experience from "./components/Experience";
+import Achievements from "./components/Achievements";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -28,6 +29,7 @@ function App() {
         <Hero />
         <About />
         <Experience />
+        <Achievements />
         <Portfolio />
       </main>
       <Contact />
