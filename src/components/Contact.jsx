@@ -43,8 +43,8 @@ const INFO_ITEMS = [
   },
   {
     label: "Email",
-    value: "your@email.com",
-    link: "mailto:your@email.com",
+    value: "hibban241209@student.abudzar.sch.id",
+    link: "mailto:hibban241209@student.abudzar.sch.id",
     linkLabel: "Send Email",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
