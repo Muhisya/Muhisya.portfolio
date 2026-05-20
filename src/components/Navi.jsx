@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { Link, scroller } from "react-scroll";
 
-const NAV_LINKS = ["home", "about", "skills", "portfolio", "contact"];
+const NAV_LINKS = ["home", "about", "skills", "achievements", "portfolio", "contact"];
 
 export default function Navbar() {
   const prefersReduced = useReducedMotion();

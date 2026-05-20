@@ -141,7 +141,7 @@ export default function About() {
                 transition={{ duration: 0.3 }}
               >
                 <img
-                  src="/your-photo.png"
+                  src="/muhisya.jpg"
                   alt="Muhisya — profile photo"
                   className="w-full h-full object-cover"
                   style={{ filter: "brightness(0.92)" }}

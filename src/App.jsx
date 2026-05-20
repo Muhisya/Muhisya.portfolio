@@ -1,6 +1,7 @@
 // File: src/App.jsx
 import React, { useEffect, useState, useReducer } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import CustomCursor from "./components/CustomCursor";
 import Navbar from "./components/Navi";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -184,6 +185,7 @@ function App() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
+          <CustomCursor />
           <Navbar />
           <main>
             <Hero />

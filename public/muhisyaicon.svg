@@ -1,0 +1,47 @@
+<svg width="512" height="512" viewBox="0 0 512 512" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Muhisya</title>
+  <desc>Muhisya portfolio icon — H letterform with cyan crossbar accent on dark background</desc>
+
+  <style>
+    .bg     { fill: #001F29; }
+    .white  { fill: #ffffff; }
+    .cyan   { fill: #00D1FF; }
+    .ring   { fill: none; stroke: rgba(0,209,255,0.13); stroke-width: 1.5; }
+    .tick   { fill: none; stroke: #00D1FF; stroke-width: 2.5; stroke-linecap: round; opacity: 0.55; }
+    .border { fill: none; stroke: rgba(0,209,255,0.22); stroke-width: 1.5; }
+  </style>
+
+  <!-- Background square -->
+  <rect x="0" y="0" width="512" height="512" rx="96" class="bg"/>
+  <rect x="0" y="0" width="512" height="512" rx="96" class="border"/>
+
+  <!-- Corner accent dots -->
+  <circle cx="40"  cy="40"  r="5" fill="#00D1FF" opacity="0.22"/>
+  <circle cx="472" cy="40"  r="5" fill="#00D1FF" opacity="0.22"/>
+  <circle cx="40"  cy="472" r="5" fill="#00D1FF" opacity="0.22"/>
+  <circle cx="472" cy="472" r="5" fill="#00D1FF" opacity="0.22"/>
+
+  <!-- Concentric rings -->
+  <circle cx="256" cy="256" r="180" class="ring"/>
+  <circle cx="256" cy="256" r="128" class="ring"/>
+
+  <!-- Tick marks -->
+  <line x1="256" y1="64"  x2="256" y2="82"  class="tick"/>
+  <line x1="448" y1="256" x2="430" y2="256" class="tick"/>
+  <line x1="256" y1="448" x2="256" y2="430" class="tick"/>
+  <line x1="64"  y1="256" x2="82"  y2="256" class="tick"/>
+
+  <!-- H: left upright -->
+  <rect x="148" y="156" width="44" height="200" rx="8" class="white"/>
+  <!-- H: right upright -->
+  <rect x="320" y="156" width="44" height="200" rx="8" class="white"/>
+  <!-- H: crossbar — white base -->
+  <rect x="148" y="234" width="216" height="44" rx="8" class="white"/>
+  <!-- H: cyan center highlight on crossbar -->
+  <rect x="222" y="234" width="68"  height="44" rx="6" class="cyan"/>
+
+  <!-- Cyan dot below H -->
+  <circle cx="256" cy="388" r="10" class="cyan"/>
+  <!-- Subtle underline -->
+  <line x1="216" y1="374" x2="296" y2="374" stroke="#00D1FF" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+</svg>
